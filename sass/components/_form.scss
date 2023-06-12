@@ -1,0 +1,123 @@
+    .form {
+        position: relative;
+        height: 75rem;
+        width: 100%;
+        &-center {
+            position: absolute;
+            top: 3rem;
+            left: 3.5rem;
+            height: 65rem;
+            width: 95%;
+            background-color: rgb(241, 236, 236);
+            @include respond(tablet-landscape) {
+                width: 94%;
+            }
+            @include respond(phone) {
+                left: 2rem;
+            }
+            .img-7 {
+                position: absolute;
+                left: 0;
+                height: 65rem;
+            }
+            .img-8 {
+                width: 61rem;
+                height: 65rem;
+                background-size: cover;
+                @include respond(phone) {
+                    display: none;
+                }
+                @include respond(tablet-port) {
+                    display: none;
+                }
+                @include respond(tablet-landscape) {
+                    width: 100%;
+                }
+            }
+            .media-4 {
+                @include respond(tablet-landscape) {
+                    position: relative;
+                    left: 5rem;
+                }
+                @include respond(phone) {
+                    position: relative;
+                    left: 1rem;
+                }
+            }
+            & input {
+                position: relative;
+                font-size: 1.5rem;
+                font-family: inherit;
+                padding: 1.5rem 2rem;
+                border-radius: 2px;
+                background-color: rbga($color-green-dark, 0.5);
+                border: transparent;
+                border-bottom: 3px solid transparent;
+                width: 90%;
+                display: block;
+                color: inherit;
+                transition: all .3s;
+                // @include respond(phone) {
+                //     padding: 1rem 1rem;
+                //     left: 2rem;
+                // }
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 1rem 2rem rgba($color-green-dark, .1);
+                    border-bottom: 3px solid $color-green-light;
+                    &:invalid {
+                        border-bottom: 3px solid $color-green-dark;
+                    }
+                    &::-webkit-input-placeholder {
+                        color: gray;
+                    }
+                }
+            }
+            .input-1 {
+                position: relative;
+                top: 15rem;
+            }
+            .input-2 {
+                position: relative;
+                top: 20rem;
+            }
+            .input-3 {
+                position: relative;
+                top: 25rem;
+            }
+            & h1 {
+                position: absolute;
+                top: 5rem;
+                font-size: 3rem;
+                font-weight: normal;
+            }
+            & .h5 {
+                position: absolute;
+                top: 10rem;
+                font-size: 1.5rem;
+                color: gray;
+                font-weight: normal;
+            }
+            .h5-1 {
+                position: relative;
+                top: 14rem;
+            }
+            .h5-2 {
+                position: relative;
+                top: 19rem;
+            }
+            .h5-3 {
+                position: relative;
+                top: 24rem;
+            }
+            .span-star {
+                color: rgb(219, 30, 30);
+            }
+            .btn-1 {
+                top: 35rem;
+                @include respond(tablet-port) {
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+    }

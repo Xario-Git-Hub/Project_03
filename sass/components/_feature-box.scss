@@ -1,0 +1,105 @@
+.feature-box {
+    position: relative;
+    height: 90rem;
+    width: 100%;
+    @include respond(tablet-port) {
+        height: 230rem;
+    }
+    @include respond(phone) {
+        height: 230rem;
+    }
+    &-h5 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-green-light;
+        font-size: 2rem;
+        @include respond(tablet-port) {
+            top: 2%;
+        }
+        @include respond(phone) {
+            top: 2%;
+        }
+    }
+    &-h1 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 4rem;
+        @include respond(tablet-port) {
+            top: 5%;
+            width: fit-content;
+        }
+        @include respond(phone) {
+            width: fit-content;
+            top: 5%;
+        }
+    }
+    .move-down {
+        position: relative;
+        top: 20rem;
+        @include respond(tablet-port) {
+            left: 8rem;
+        }
+        @include respond(phone) {
+            left: 10rem;
+        }
+        &-1 {
+            position: relative;
+            top: 20rem;
+            @include respond(tablet-port) {
+                left: 8rem;
+            }
+            @include respond(phone) {
+                left: 10rem;
+            }
+        }
+    }
+    &-1 {
+        height: 30rem;
+        width: 30rem;
+        border-left: rgb(214, 210, 210) 1px solid;
+        border-right: rgb(214, 210, 210) 1px solid;
+        text-align: center;
+        display: inline-block;
+        box-sizing: border-box;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        & .icon {
+            padding-top: 4rem;
+            font-size: 8rem;
+            color: $color-green-light;
+            transition: all .5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & h1 {
+            padding-top: 2rem;
+            font-size: 2rem;
+        }
+        & p {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            width: 25rem;
+            font-size: 1.5rem;
+            text-align: center;
+            color: gray;
+        }
+        & h5 {
+            font-size: 1.4rem;
+            padding-top: 1rem;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover {
+                color: $color-green-light;
+                transform: scale(0.98);
+            }
+        }
+    }
+}

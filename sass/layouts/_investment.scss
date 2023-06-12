@@ -1,0 +1,116 @@
+.investment {
+    position: relative;
+    height: 75rem;
+    width: 100%;
+    &-center {
+        position: absolute;
+        top: 3rem;
+        left: 3.5rem;
+        height: 65rem;
+        width: 95%;
+        background-color: rgb(241, 236, 236);
+        @include respond(tablet-landscape) {
+            width: 94%;
+        }
+        @include respond(phone) {
+            left: 2rem;
+        }
+    }
+    .img-4 {
+        position: absolute;
+        left: 0;
+        height: 65rem;
+        @include respond(phone) {
+            left: 53.5rem;
+        }
+    }
+    .img-5 {
+        margin-left: -4.25rem;
+        height: 65rem;
+        width: 55rem;
+        background-size: cover;
+        @include respond(tablet-landscape) {
+            position: relative;
+            left: 7rem;
+            width: 45rem;
+        }
+        @include respond(tablet-port) {
+            display: none;
+        }
+        @include respond(phone) {
+            width: 53rem;
+        }
+    }
+    & h5 {
+        position: absolute;
+        top: 8rem;
+        font-size: 2rem;
+        color: $color-green-light;
+        @include respond(tablet-port) {
+            top: 3rem;
+        }
+    }
+    & h1 {
+        position: absolute;
+        top: 14rem;
+        width: 30rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: left;
+        font-weight: normal;
+        @include respond(tablet-port) {
+            top: 12rem;
+            width: fit-content;
+        }
+        @include respond(phone) {
+            width: 35rem;
+            text-align: left;
+        }
+    }
+    & p {
+        position: relative;
+        top: 30rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: gray;
+        @include respond(tablet-port) {
+            top: 18rem;
+        }
+    }
+    .tick-1 {
+        position: absolute;
+        top: 43rem;
+        font-size: 2rem;
+        color: $color-green-light;
+        @include respond(tablet-port) {
+            top: 40rem;
+        }
+    }
+    .tick-2 {
+        position: absolute;
+        top: 47rem;
+        font-size: 2rem;
+        color: $color-green-light;
+        @include respond(tablet-port) {
+            top: 44rem;
+        }
+    }
+    .tick-3 {
+        position: absolute;
+        top: 52rem;
+        font-size: 2rem;
+        color: $color-green-light;
+        @include respond(tablet-port) {
+            top: 48rem;
+        }
+    }
+    .btn-down {
+        top: 50rem;
+        @include respond(tablet-port) {
+            top: 40rem;
+            padding: 1.5rem 2rem;
+        }
+    }
+}

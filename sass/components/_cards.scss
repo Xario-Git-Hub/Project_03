@@ -1,0 +1,271 @@
+                    .cards {
+                        position: relative;
+                        height: 80rem;
+                        width: 100%;
+                        top: 0rem;
+                        @include respond(tablet-port) {
+                            height: 185rem;
+                        }
+                        @include respond(phone) {
+                            height: 180rem;
+                        }
+                        &-heading {
+                            position: absolute;
+                            top: 5rem;
+                            height: 20rem;
+                            width: 100%;
+                            & h1 {
+                                position: absolute;
+                                font-size: 4rem;
+                                left: 5rem;
+                                @include respond(tablet-port) {
+                                    top: 4rem;
+                                    font-size: 4rem;
+                                }
+                                @include respond(phone) {
+                                    top: 4rem;
+                                    font-size: 3rem;
+                                }
+                            }
+                            & .left-1 {
+                                position: absolute;
+                                font-size: 5rem;
+                                top: 1rem;
+                                left: 120rem;
+                                transition: all .5s;
+                                @include respond(tablet-landscape) {
+                                    left: 102rem;
+                                }
+                                @include respond(tablet-port) {
+                                    top: 4rem;
+                                    left: 75rem;
+                                    font-size: 4rem;
+                                }
+                                @include respond(phone) {
+                                    top: 4rem;
+                                    left: 45rem;
+                                    font-size: 4rem;
+                                }
+                                &:hover {
+                                    color: $color-green-light;
+                                    transform: scale(0.98);
+                                }
+                            }
+                            & .right-1 {
+                                position: absolute;
+                                font-size: 5rem;
+                                top: 1rem;
+                                left: 125rem;
+                                transition: all .5s;
+                                @include respond(tablet-landscape) {
+                                    left: 108rem;
+                                }
+                                @include respond(tablet-port) {
+                                    top: 4rem;
+                                    left: 80rem;
+                                    font-size: 4rem;
+                                }
+                                @include respond(phone) {
+                                    top: 4rem;
+                                    left: 50rem;
+                                    font-size: 4rem;
+                                }
+                                &:hover {
+                                    color: $color-green-light;
+                                    transform: scale(0.98);
+                                }
+                            }
+                        }
+                        .move-down {
+                            position: relative;
+                            top: 25rem;
+                            @include respond(tablet-port) {
+                                left: 8rem;
+                            }
+                            @include respond(phone) {
+                                left: 8rem;
+                                top: 20rem;
+                            }
+                        }
+                        &-1 {
+                            height: 48rem;
+                            width: 35rem;
+                            transition: all .5s;
+                            &:hover {
+                                transform: scale(0.98);
+                            }
+                            &-picture {
+                                border: solid 5px $color-green-dark;
+                                height: 20rem;
+                                background-size: cover;
+                                clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+                                cursor: pointer;
+                                &-1 {
+                                    background-image: url(../../img/service-1.jpg);
+                                }
+                                &-2 {
+                                    background-image: url(../../img/service-2.jpg);
+                                }
+                                &-3 {
+                                    background-image: url(../../img/service-3.jpg);
+                                }
+                            }
+                            & h4 {
+                                background-color: $color-green-light;
+                                height: 10rem;
+                                color: white;
+                                text-align: center;
+                                padding-top: rem;
+                                font-size: x-large;
+                                text-transform: uppercase;
+                                transition: all .5s;
+                                cursor: pointer;
+                                perspective: 150;
+                            }
+                            & p {
+                                padding-top: 2rem;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                            & h5 {
+                                padding-top: 2rem;
+                                font-size: 1.8rem;
+                                font-weight: normal;
+                                text-align: center;
+                                transition: all .5s;
+                                cursor: pointer;
+                                &:hover {
+                                    color: $color-green-light;
+                                    transform: scale(0.97);
+                                }
+                            }
+                        } //     &-1 {
+                        //         // position: absolute;
+                        //         top: 15rem;
+                        //         height: 55rem;
+                        //         &-top {
+                        //             height: 25rem;
+                        //             width: 100%;
+                        //             background-image: url(../../img/service-1.jpg);
+                        //             background-size: cover;
+                        //             & h4 {
+                        //                 position: absolute;
+                        //                 height: 8rem;
+                        //                 width: 100%;
+                        //                 background-color: $color-green-light;
+                        //                 color: white;
+                        //                 text-align: center;
+                        //                 top: 25rem;
+                        //                 left: 0rem;
+                        //                 font-size: 2.5rem;
+                        //                 text-transform: uppercase;
+                        //                 font-weight: normal;
+                        //             }
+                        //         }
+                        //         & p {
+                        //             position: absolute;
+                        //             top: 35rem;
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //         }
+                        //         & h5 {
+                        //             position: absolute;
+                        //             left: 50%;
+                        //             top: 90%;
+                        //             transform: translate(-50%, -50%);
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //         }
+                        //     }
+                        //     &-2 {
+                        //         // position: absolute;
+                        //         top: 15rem;
+                        //         height: 55rem;
+                        //         width: 40rem;
+                        //         border: solid 1px gray;
+                        //         &-top {
+                        //             height: 25rem;
+                        //             width: 100%;
+                        //             background-image: url(../../img/service-2.jpg);
+                        //             background-size: cover;
+                        //             & h4 {
+                        //                 position: absolute;
+                        //                 height: 8rem;
+                        //                 width: 100%;
+                        //                 background-color: $color-green-light;
+                        //                 color: white;
+                        //                 text-align: center;
+                        //                 top: 25rem;
+                        //                 left: 0rem;
+                        //                 font-size: 2.5rem;
+                        //                 text-transform: uppercase;
+                        //                 font-weight: normal;
+                        //             }
+                        //         }
+                        //         & p {
+                        //             position: absolute;
+                        //             top: 35rem;
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //         }
+                        //         & h5 {
+                        //             position: absolute;
+                        //             left: 50%;
+                        //             top: 90%;
+                        //             transform: translate(-50%, -50%);
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //             transition: all .5s;
+                        //             cursor: pointer;
+                        //             &:hover {
+                        //                 color: $color-green-light;
+                        //             }
+                        //         }
+                        //     }
+                        //     &-3 {
+                        //         // position: absolute;
+                        //         top: 15rem;
+                        //         height: 55rem;
+                        //         width: 40rem;
+                        //         border: solid 1px gray;
+                        //         &-top {
+                        //             height: 25rem;
+                        //             width: 100%;
+                        //             background-image: url(../../img/service-3.jpg);
+                        //             background-size: cover;
+                        //             & h4 {
+                        //                 position: absolute;
+                        //                 height: 8rem;
+                        //                 width: 100%;
+                        //                 background-color: $color-green-light;
+                        //                 color: white;
+                        //                 text-align: center;
+                        //                 top: 25rem;
+                        //                 left: 0rem;
+                        //                 font-size: 2.5rem;
+                        //                 text-transform: uppercase;
+                        //                 font-weight: normal;
+                        //             }
+                        //         }
+                        //         & p {
+                        //             position: absolute;
+                        //             top: 35rem;
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //         }
+                        //         & h5 {
+                        //             position: absolute;
+                        //             left: 50%;
+                        //             top: 90%;
+                        //             transform: translate(-50%, -50%);
+                        //             font-size: 1.5rem;
+                        //             text-align: center;
+                        //             transition: all .5s;
+                        //             cursor: pointer;
+                        //             &:hover {
+                        //                 color: $color-green-light;
+                        //             }
+                        //         }
+                        //     }
+                        // }
+                    }

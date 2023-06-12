@@ -1,0 +1,154 @@
+.map {
+    position: relative;
+    height: 75rem;
+    width: 100%;
+    &-center {
+        position: relative;
+        top: 3rem;
+        left: 3.5rem;
+        height: 65rem;
+        width: 95%;
+        background-color: rgb(241, 236, 236);
+        @include respond(tablet-landscape) {
+            width: 94%;
+        }
+        @include respond(tablet-port) {
+            width: 92%;
+        }
+        @include respond(phone) {
+            left: 2.5rem;
+        }
+        & h1 {
+            position: absolute;
+            top: 5rem;
+            left: 70rem;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: normal;
+            color: $color-green-light;
+            @include respond(tablet-landscape) {
+                left: 15em;
+            }
+            @include respond(tablet-port) {
+                left: 2rem;
+            }
+            @include respond(phone) {
+                display: none;
+            }
+        }
+        &-1 {
+            position: absolute;
+            top: 18rem;
+            left: 85rem;
+            text-align: center;
+            @include respond(tablet-landscape) {
+                left: 75rem;
+            }
+            @include respond(tablet-port) {
+                left: 8rem;
+            }
+            @include respond(phone) {
+                display: none;
+            }
+            & h5 {
+                font-size: 2rem;
+                padding-top: 1rem;
+                transition: all .5s;
+                cursor: pointer;
+                &:hover {
+                    color: $color-green-light;
+                }
+            }
+            & p {
+                font-size: 1.5rem;
+                padding-top: .5rem;
+                color: gray;
+            }
+            .img-10 {
+                height: 10rem;
+            }
+        }
+        &-2 {
+            position: absolute;
+            top: 40rem;
+            left: 70rem;
+            text-align: center;
+            @include respond(tablet-landscape) {
+                left: 60rem;
+            }
+            @include respond(tablet-port) {
+                top: 18rem;
+                left: 35rem;
+            }
+            @include respond(phone) {
+                display: none;
+            }
+            & h5 {
+                font-size: 2rem;
+                padding-top: 1rem;
+                transition: all .5s;
+                cursor: pointer;
+                &:hover {
+                    color: $color-green-light;
+                }
+            }
+            & p {
+                font-size: 1.5rem;
+                padding-top: .5rem;
+                color: gray;
+            }
+            .img-11 {
+                height: 10rem;
+            }
+        }
+        &-3 {
+            position: absolute;
+            top: 40rem;
+            left: 107rem;
+            text-align: center;
+            @include respond(tablet-landscape) {
+                left: 93rem;
+            }
+            @include respond(tablet-port) {
+                top: 18rem;
+                left: 60rem;
+            }
+            @include respond(phone) {
+                display: none;
+            }
+            & h5 {
+                font-size: 2rem;
+                padding-top: 1rem;
+                transition: all .5s;
+                cursor: pointer;
+                &:hover {
+                    color: $color-green-light;
+                }
+            }
+            & p {
+                font-size: 1.5rem;
+                padding-top: .5rem;
+                color: gray;
+            }
+            .img-12 {
+                height: 10rem;
+            }
+        }
+    }
+    & iframe {
+        margin-left: -7rem;
+        @include respond(tablet-port) {
+            width: 100%;
+            height: 25rem;
+            position: absolute;
+            top: 40rem;
+            left: 7rem;
+        }
+        @include respond(phone) {
+            top: 0;
+            left: 7rem;
+            width: 55rem;
+            height: 65rem;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.articles {
+    position: relative;
+    height: 90rem;
+    width: 100%;
+    top: 0rem;
+    @include respond(tablet-port) {
+        height: 200rem;
+    }
+    @include respond(phone) {
+        height: 200rem;
+    }
+    &-heading {
+        position: absolute;
+        top: 5rem;
+        height: 20rem;
+        width: 100%;
+        & h1 {
+            position: absolute;
+            font-size: 4rem;
+            left: 5rem;
+            @include respond(tablet-port) {
+                font-size: 4rem;
+            }
+            @include respond(phone) {
+                left: 2rem;
+                font-size: 3rem;
+            }
+        }
+        & .left-1 {
+            position: absolute;
+            font-size: 5rem;
+            top: 1rem;
+            left: 120rem;
+            transition: all .5s;
+            @include respond(tablet-landscape) {
+                left: 102rem;
+            }
+            @include respond(tablet-port) {
+                left: 75rem;
+                font-size: 4rem;
+            }
+            @include respond(phone) {
+                left: 50rem;
+                font-size: 3rem;
+            }
+            &:hover {
+                color: $color-green-light;
+                transform: scale(0.98);
+            }
+        }
+        & .right-1 {
+            position: absolute;
+            font-size: 5rem;
+            top: 1rem;
+            left: 125rem;
+            transition: all .5s;
+            @include respond(tablet-landscape) {
+                left: 110rem;
+            }
+            @include respond(tablet-port) {
+                left: 80rem;
+                font-size: 4rem;
+            }
+            @include respond(phone) {
+                left: 55rem;
+                font-size: 3rem;
+            }
+            &:hover {
+                color: $color-green-light;
+                transform: scale(0.98);
+            }
+        }
+    }
+    .move-down {
+        position: relative;
+        justify-content: center;
+        top: 20rem;
+        @include respond(tablet-port) {
+            left: 8rem;
+        }
+        @include respond(phone) {
+            left: 7rem;
+        }
+    }
+    &-1 {
+        height: 55rem;
+        width: 38rem;
+        box-sizing: border-box;
+        transition: all .5s;
+        // background-color: gray;
+        &:hover {
+            transform: scale(0.98);
+        }
+        .img-9 {
+            background-size: cover;
+            height: 25rem;
+            width: 34rem;
+            clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
+            border: solid 5px $color-green-dark;
+        }
+        .h5-6 {
+            padding-top: 5rem;
+            padding-left: 3rem;
+            width: fit-content;
+            font-size: 1.5rem;
+            color: $color-green-light;
+        }
+        & h6 {
+            padding-left: 25rem;
+            font-size: 1.4rem;
+            color: gray;
+            font-weight: normal;
+        }
+        & h1 {
+            padding-top: 4rem;
+            font-size: 2.5rem;
+            text-align: center;
+            width: 37rem;
+            font-weight: normal;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover {
+                color: $color-green-light;
+                transform: scale(1.005)
+            }
+        }
+        & p {
+            padding-top: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        & .h5-4 {
+            padding-top: 1rem;
+            text-align: center;
+            font-size: large;
+            font-weight: normal;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover {
+                transform: scale(0.98);
+                color: $color-green-light;
+            }
+        }
+    }
+}
